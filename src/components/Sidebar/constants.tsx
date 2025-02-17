@@ -1,4 +1,4 @@
-import { DashboardIcon } from './icons';
+import { DashboardIcon, SettingsIcon } from './icons';
 import { MenuItemsProps } from './types';
 
 export const menuItems: MenuItemsProps[] = [
@@ -7,5 +7,16 @@ export const menuItems: MenuItemsProps[] = [
     icon: <DashboardIcon />,
     path: '/dashboard',
     submenu: [],
+  },
+  {
+    title: 'Settings',
+    icon: <SettingsIcon />,
+    path: '/settings',
+    submenu: [{
+      title: 'Dashboard',
+      icon: <DashboardIcon />,
+      path: '/dashboard',
+      submenu: [],
+    },],
   },
 ];
