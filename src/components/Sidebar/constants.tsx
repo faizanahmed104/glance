@@ -12,11 +12,19 @@ export const menuItems: MenuItemsProps[] = [
     title: 'Settings',
     icon: <SettingsIcon />,
     path: '/settings',
-    submenu: [{
-      title: 'Dashboard',
-      icon: <DashboardIcon />,
-      path: '/dashboard',
-      submenu: [],
-    },],
+    submenu: [
+      {
+        title: 'Profile',
+        icon: <DashboardIcon />,
+        path: '/settings/profile',
+        submenu: [],
+      },
+      {
+        title: 'Account',
+        icon: <DashboardIcon />,
+        path: '/settings/account',
+        submenu: [],
+      },
+    ],
   },
 ];
